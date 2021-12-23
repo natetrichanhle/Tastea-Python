@@ -94,3 +94,20 @@ body{
 .add-cart a:hover{
     font-weight: bold;
 }
+
+
+.drinksincart{
+    display: flex;
+    justify-content: center;
+    padding-top:20px;
+}
+
+.removebtn{
+    text-decoration: none;
+    margin-left:30px;
+    color:#20892f;
+}
+
+.removebtn:hover{
+    font-weight: bolder;
+}

@@ -19,7 +19,7 @@
         </div>
         <div class="back">
             <div class="links">
-                <a href = '/categories'>Back</a>
+                <a href = '/categories'>Back</button>
             </div>
             <div class = 'cart'>
                 <a href ='/cart'> 
@@ -27,224 +27,276 @@
                     <i class="material-icons md-36">
                     shopping_cart
                     </i>
-                    </span>   
+                    </span>
+                </a>   
                     <!-- <img src="{{ url_for('static', filename='/img/cart.jpg') }}" alt='' class='cart-unswapped'>
                     <img src="{{ url_for('static', filename='/img/cartfilled.jpg') }}" alt='' class='cart-swapped'> -->
-                </a> 
+                </button> 
             </div>
         </div>
     </div>
     {% block navbar %}
     <div class="product-container">
-        <a href="/addcart">
-            <div class="items">
-                <img src="{{ url_for('static', filename='/img/hot_pumpkin_pie_milk_tea.jpg') }}" alt=''>
-                <div class="desc-container">
-                    <h3>Hot Pumpkin Pie Milk Tea</h3>
-                    <h5>$5.25</h5>
-                    <div class="description">
-                        <p>delightful pumpkin pie formosa black tea topped with cheese foam & a sprinkle of nutmeg and freshly steamed to order</p>
+            <form action="/cart">
+                <button>
+                    <div class="items">
+                        <input type="hidden" name="id" value="1">
+                        <img src="{{ url_for('static', filename='/img/hot_pumpkin_pie_milk_tea.jpg') }}" alt=''>
+                        <div class="desc-container">
+                            <h3>Hot Pumpkin Pie Milk Tea</h3>
+                            <h5>$5.25</h5>
+                            <div class="description">
+                                <p>delightful pumpkin pie formosa black tea topped with cheese foam & a sprinkle of nutmeg and freshly steamed to order</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </a>
-        <a href="/addcart">
-            <div class="items">
-                <img src="{{ url_for('static', filename='/img/hot_horchata_milk_tea.jpg') }}" alt=''>
-                <div class="desc-container">
-                    <h3>Hot Horchata Milk Tea</h3>
-                    <h5>$5.25 | 184 Calories</h5>
-                    <div class="description">
-                        <p>horchata flavored formosa tea with your choice of dairy adorned with sea foam and crushed cinnamon cereal and freshly steamed to order</p>
+                </button>
+            </form>
+            <form action="/cart">
+                <button>
+                    <div class="items">
+                        <input type="hidden" name="id" value="2">
+                        <img src="{{ url_for('static', filename='/img/hot_horchata_milk_tea.jpg') }}" alt=''>
+                        <div class="desc-container">
+                            <h3>Hot Horchata Milk Tea</h3>
+                            <h5>$5.25 | 184 Calories</h5>
+                            <div class="description">
+                                <p>horchata flavored formosa tea with your choice of dairy adorned with sea foam and crushed cinnamon cereal and freshly steamed to order</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </a>
-        <a href="/addcart">
-            <div class="items">
-                <img src="{{ url_for('static', filename='/img/hot_classic_milk_tea.jpg') }}" alt=''>
-                <div class="desc-container">
-                    <h3>Hot Classic Milk Tea</h3>
-                    <h5>$5.00 | 420 Calories</h5>
-                    <div class="description">
-                        <p>formosa black tea with choice of dairy and freshly steamed to order</p>
+                </button>
+            </form>
+            <form action="/cart">
+                <button>
+                    <div class="items">
+                        <input type="hidden" name="id" value="3">
+                        <img src="{{ url_for('static', filename='/img/hot_classic_milk_tea.jpg') }}" alt=''>
+                        <div class="desc-container">
+                            <h3>Hot Classic Milk Tea</h3>
+                            <h5>$5.00 | 420 Calories</h5>
+                            <div class="description">
+                                <p>formosa black tea with choice of dairy and freshly steamed to order</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </a>
-        <a href="/addcart">
-            <div class="items">
-                <img src="{{ url_for('static', filename='/img/hot_winter_melon_milk_tea.jpg') }}" alt=''>
-                <div class="desc-container">
-                    <h3>Hot Winter Melon Milk Tea</h3>
-                    <h5>$5.00 | 222 Calories</h5>
-                    <div class="description">
-                        <p>winter melon tea with your choice of dairy and freshly steamed to order<br>
-                        Unable to reduce sweetness beyond Medium Sweet as the Winter Melon flavor would not be apparent at Lite or No Sweet.</p>
+                </button>
+            </form>
+            <form action="/cart">
+                <button>
+                    <div class="items">
+                        <input type="hidden" name="id" value="4">
+                        <img src="{{ url_for('static', filename='/img/hot_winter_melon_milk_tea.jpg') }}" alt=''>
+                        <div class="desc-container">
+                            <h3>Hot Winter Melon Milk Tea</h3>
+                            <h5>$5.00 | 222 Calories</h5>
+                            <div class="description">
+                                <p>winter melon tea with your choice of dairy and freshly steamed to order<br>
+                                Unable to reduce sweetness beyond Medium Sweet as the Winter Melon flavor would not be apparent at Lite or No Sweet.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </a>
-        <a href="/addcart">
-            <div class="items">
-                <img src="{{ url_for('static', filename='/img/hot_golden_milk_tea.jpg') }}" alt=''>
-                <div class="desc-container">
-                    <h3>Hot Golden Milk Tea</h3>
-                    <h5>$5.00 | 276 Calories</h5>
-                    <div class="description">
-                        <p>assam black tea with choice of dairy and freshly steamed to order</p>
+                </button>
+            </form>
+            <form action="/cart">
+                <button>
+                    <div class="items">
+                        <input type="hidden" name="id" value="5">
+                        <img src="{{ url_for('static', filename='/img/hot_golden_milk_tea.jpg') }}" alt=''>
+                        <div class="desc-container">
+                            <h3>Hot Golden Milk Tea</h3>
+                            <h5>$5.00 | 276 Calories</h5>
+                            <div class="description">
+                                <p>assam black tea with choice of dairy and freshly steamed to order</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </a>
-        <a href="/addcart">
-            <div class="items">
-                <img src="{{ url_for('static', filename='/img/hot_matcha_milk_tea.jpg') }}" alt=''>
-                <div class="desc-container">
-                    <h3>Hot Matcha Milk Tea</h3>
-                    <h5>$5.00 | 393 Calories</h5>
-                    <div class="description">
-                        <p>matcha jasmine green tea with choice of dairy and freshly steamed to order</p>
+                </button>
+            </form>
+            <form action="/cart">
+                <button>
+                    <div class="items">
+                        <input type="hidden" name="id" value="6">
+                        <img src="{{ url_for('static', filename='/img/hot_matcha_milk_tea.jpg') }}" alt=''>
+                        <div class="desc-container">
+                            <h3>Hot Matcha Milk Tea</h3>
+                            <h5>$5.00 | 393 Calories</h5>
+                            <div class="description">
+                                <p>matcha jasmine green tea with choice of dairy and freshly steamed to order</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </a>
-        <a href="/addcart">
-            <div class="items">
-                <img src="{{ url_for('static', filename='/img/hot_taro_milk_tea.jpg') }}" alt=''>
-                <div class="desc-container">
-                    <h3>Hot Taro Milk Tea</h3>
-                    <h5>$5.00 | 381 Calories</h5>
-                    <div class="description">
-                        <p>taro black tea with choice of dairy and freshly steamed to order</p>
+                </button>
+            </form>
+            <form action="/cart">
+                <button>
+                    <div class="items">
+                        <input type="hidden" name="id" value="7">
+                        <img src="{{ url_for('static', filename='/img/hot_taro_milk_tea.jpg') }}" alt=''>
+                        <div class="desc-container">
+                            <h3>Hot Taro Milk Tea</h3>
+                            <h5>$5.00 | 381 Calories</h5>
+                            <div class="description">
+                                <p>taro black tea with choice of dairy and freshly steamed to order</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </a>
-        <a href="/addcart">
-            <div class="items">
-                <img src="{{ url_for('static', filename='/img/hot_strawberry_milk_tea.jpg') }}" alt=''>
-                <div class="desc-container">
-                    <h3>Hot Strawberry Milk Tea</h3>
-                    <h5>$5.00 | 291 Calories</h5>
-                    <div class="description">
-                        <p>strawberry black tea made with cane and choice of dairy, freshly steamed to order</p>
+                </button>
+            </form>
+            <form action="/cart">
+                <button>
+                    <div class="items">
+                        <input type="hidden" name="id" value="8">
+                        <img src="{{ url_for('static', filename='/img/hot_strawberry_milk_tea.jpg') }}" alt=''>
+                        <div class="desc-container">
+                            <h3>Hot Strawberry Milk Tea</h3>
+                            <h5>$5.00 | 291 Calories</h5>
+                            <div class="description">
+                                <p>strawberry black tea made with cane and choice of dairy, freshly steamed to order</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </a>
-        <a href="/addcart">
-            <div class="items">
-                <img src="{{ url_for('static', filename='/img/hot_tiger_milk.jpg') }}" alt=''>
-                <div class="desc-container">
-                    <h3>Hot Tiger Milk</h3>
-                    <h5>$5.50 | 449 Calories</h5>
-                    <div class="description">
-                        <p>whole milk and creme brulee adorned with a brown sugar drizzle and freshly steamed to order<br>
-                        Unable to reduce sweetness beyond Medium Sweet as the Brown Sugar flavor would not be apparent at Lite or No Sweet.</p>
+                </button>
+            </form>
+            <form action="/cart">
+                <button>
+                    <div class="items">
+                        <input type="hidden" name="id" value="9">
+                        <img src="{{ url_for('static', filename='/img/hot_tiger_milk.jpg') }}" alt=''>
+                        <div class="desc-container">
+                            <h3>Hot Tiger Milk</h3>
+                            <h5>$5.50 | 449 Calories</h5>
+                            <div class="description">
+                                <p>whole milk and creme brulee adorned with a brown sugar drizzle and freshly steamed to order<br>
+                                Unable to reduce sweetness beyond Medium Sweet as the Brown Sugar flavor would not be apparent at Lite or No Sweet.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </a>
-        <a href="/addcart">
-            <div class="items">
-                <img src="{{ url_for('static', filename='/img/hot_oolong_milk_tea.jpg') }}" alt=''>
-                <div class="desc-container">
-                    <h3>Hot Oolong Milk Tea</h3>
-                    <h5>$5.00 | 355 Calories</h5>
-                    <div class="description">
-                        <p>oolong tea with choice of dairy and freshly steamed to order</p>
+                </button>
+            </form>
+            <form action="/cart">
+                <button>
+                    <div class="items">
+                        <input type="hidden" name="id" value="10">
+                        <img src="{{ url_for('static', filename='/img/hot_oolong_milk_tea.jpg') }}" alt=''>
+                        <div class="desc-container">
+                            <h3>Hot Oolong Milk Tea</h3>
+                            <h5>$5.00 | 355 Calories</h5>
+                            <div class="description">
+                                <p>oolong tea with choice of dairy and freshly steamed to order</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </a>
-        <a href="/addcart">
-            <div class="items">
-                <img src="{{ url_for('static', filename='/img/hot_ube_milk_tea.jpg') }}" alt=''>
-                <div class="desc-container">
-                    <h3>Hot Ube Milk Tea</h3>
-                    <h5>$5.00</h5>
-                    <div class="description">
-                        <p>black tea shaken with ube and coconut foam and freshly steamed to order</p>
+                </button>
+            </form>
+            <form action="/cart">
+                <button>
+                    <div class="items">
+                        <input type="hidden" name="id" value="11">
+                        <img src="{{ url_for('static', filename='/img/hot_ube_milk_tea.jpg') }}" alt=''>
+                        <div class="desc-container">
+                            <h3>Hot Ube Milk Tea</h3>
+                            <h5>$5.00</h5>
+                            <div class="description">
+                                <p>black tea shaken with ube and coconut foam and freshly steamed to order</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </a>
-        <a href="/addcart">
-            <div class="items">
-                <img src="{{ url_for('static', filename='/img/hot_jasmine_milk_tea.jpg') }}" alt=''>
-                <div class="desc-container">
-                    <h3>Hot Jasmine Milk Tea</h3>
-                    <h5>$5.00 | 355 Calories</h5>
-                    <div class="description">
-                        <p>jasmine green tea with choice of dairy and freshly steamed to order</p>
+                </button>
+            </form>
+            <form action="/cart">
+                <button>
+                    <div class="items">
+                        <input type="hidden" name="id" value="12">
+                        <img src="{{ url_for('static', filename='/img/hot_jasmine_milk_tea.jpg') }}" alt=''>
+                        <div class="desc-container">
+                            <h3>Hot Jasmine Milk Tea</h3>
+                            <h5>$5.00 | 355 Calories</h5>
+                            <div class="description">
+                                <p>jasmine green tea with choice of dairy and freshly steamed to order</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </a>
-        <a href="/addcart">
-            <div class="items">
-                <img src="{{ url_for('static', filename='/img/hot_winter_melon_green_milk_tea.jpg') }}" alt=''>
-                <div class="desc-container">
-                    <h3>Hot Winter Melon Green Milk Tea</h3>
-                    <h5>$5.00 | 222 Calories</h5>
-                    <div class="description">
-                        <p>winter melon and jasmine green tea with your choice of dairy and freshly steamed to order<br>
-                        Unable to reduce sweetness beyond Medium Sweet as the Winter Melon flavor would not be apparent at Lite or No Sweet.</p>
+                </button>
+            </form>
+            <form action="/cart">
+                <button>
+                    <div class="items">
+                        <input type="hidden" name="id" value="13">
+                        <img src="{{ url_for('static', filename='/img/hot_winter_melon_green_milk_tea.jpg') }}" alt=''>
+                        <div class="desc-container">
+                            <h3>Hot Winter Melon Green Milk Tea</h3>
+                            <h5>$5.00 | 222 Calories</h5>
+                            <div class="description">
+                                <p>winter melon and jasmine green tea with your choice of dairy and freshly steamed to order<br>
+                                Unable to reduce sweetness beyond Medium Sweet as the Winter Melon flavor would not be apparent at Lite or No Sweet.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </a>
-        <a href="/addcart">
-            <div class="items">
-                <img src="{{ url_for('static', filename='/img/hot_thai_milk_tea.jpg') }}" alt=''>
-                <div class="desc-container">
-                    <h3>Hot Thai Milk Tea</h3>
-                    <h5>$5.00 | 466 Calories</h5>
-                    <div class="description">
-                        <p>thai tea with choice of dairy and freshly steamed to order</p>
+                </button>
+            </form>
+            <form action="/cart">
+                <button>
+                    <div class="items">
+                        <input type="hidden" name="id" value="14">
+                        <img src="{{ url_for('static', filename='/img/hot_thai_milk_tea.jpg') }}" alt=''>
+                        <div class="desc-container">
+                            <h3>Hot Thai Milk Tea</h3>
+                            <h5>$5.00 | 466 Calories</h5>
+                            <div class="description">
+                                <p>thai tea with choice of dairy and freshly steamed to order</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </a>
-        <a href="/addcart">
-            <div class="items">
-                <img src="{{ url_for('static', filename='/img/hot_matcha_thai_milk_tea.jpg') }}" alt=''>
-                <div class="desc-container">
-                    <h3>Hot Matcha Thai Milk Tea</h3>
-                    <h5>$5.00 | 494 Calories</h5>
-                    <div class="description">
-                        <p>matcha thai tea with choice of dairy and freshly steamed to order</p>
+                </button>
+            </form>
+            <form action="/cart">
+                <button>
+                    <div class="items">
+                        <input type="hidden" name="id" value="15">
+                        <img src="{{ url_for('static', filename='/img/hot_matcha_thai_milk_tea.jpg') }}" alt=''>
+                        <div class="desc-container">
+                            <h3>Hot Matcha Thai Milk Tea</h3>
+                            <h5>$5.00 | 494 Calories</h5>
+                            <div class="description">
+                                <p>matcha thai tea with choice of dairy and freshly steamed to order</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </a>
-        <a href="/addcart">
-            <div class="items">
-                <img src="{{ url_for('static', filename='/img/hot_honeydew_milk_tea.jpg') }}" alt=''>
-                <div class="desc-container">
-                    <h3>Hot Honeydew Milk Tea</h3>
-                    <h5>$5.00 | 381 Calories</h5>
-                    <div class="description">
-                        <p>honeydew black tea with choice of dairy and freshly steamed to order</p>
+                </button>
+            </form>
+            <form action="/cart">
+                <button>
+                    <div class="items">
+                        <input type="hidden" name="id" value="16">
+                        <img src="{{ url_for('static', filename='/img/hot_honeydew_milk_tea.jpg') }}" alt=''>
+                        <div class="desc-container">
+                            <h3>Hot Honeydew Milk Tea</h3>
+                            <h5>$5.00 | 381 Calories</h5>
+                            <div class="description">
+                                <p>honeydew black tea with choice of dairy and freshly steamed to order</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </a>
-        <a href="/addcart">
-            <div class="items">
-                <img src="{{ url_for('static', filename='/img/hot_tiger_milk_tea.jpg') }}" alt=''>
-                <div class="desc-container">
-                    <h3>Hot Tiger Milk Tea</h3>
-                    <h5>$5.50 | 506 Calories</h5>
-                    <div class="description">
-                        <p>formosa tea with creme brulee and your choice of dairy adorned with brown sugar drizzle and freshly steamed to order<br>
-                        Unable to reduce sweetness beyond Medium Sweet as the Brown Sugar flavor would not be apparent at Lite or No Sweet.</p>
+                </button>
+            </form>
+            <form action="/cart">
+                <button>
+                    <div class="items">
+                        <input type="hidden" name="id" value="17">
+                        <img src="{{ url_for('static', filename='/img/hot_tiger_milk_tea.jpg') }}" alt=''>
+                        <div class="desc-container">
+                            <h3>Hot Tiger Milk Tea</h3>
+                            <h5>$5.50 | 506 Calories</h5>
+                            <div class="description">
+                                <p>formosa tea with creme brulee and your choice of dairy adorned with brown sugar drizzle and freshly steamed to order<br>
+                                Unable to reduce sweetness beyond Medium Sweet as the Brown Sugar flavor would not be apparent at Lite or No Sweet.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </a>
-    </div>
+                </button>
+            </form>
+        </div>
     {% endblock %}
 </body>
 </html>

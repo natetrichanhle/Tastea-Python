@@ -71,22 +71,6 @@ body{
     overflow: hidden;
 }
 
-a img.cart-swapped {
-    display: none;
-}
-
-a img.cart-unswapped {
-    display: inherit;
-}
-
-a:hover img.cart-swapped {
-    display: inherit;
-}
-
-a:hover img.cart-unswapped {
-    display: none;
-}
-
 .items img{
     border-radius: 20px 20px 0px 0px;
 }
@@ -121,6 +105,11 @@ a:hover img.cart-unswapped {
 .product-container a{
     text-decoration: none;
     color:black;
+}
+
+button{
+    border:none;
+    background-color: transparent;
 }
 
 

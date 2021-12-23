@@ -1,6 +1,8 @@
 from flask import render_template,url_for
 from flask_app import app
 
+from flask_app.models import productsmodel
+
 @app.route('/')
 def startOrder():
     return render_template('start_order.html')
@@ -11,6 +13,7 @@ def nav():
 
 @app.route('/hotties')
 def hotties():
+    # items = productsmodel.Product.get_all_category()
     return render_template('hotties.html')
 
 @app.route('/exit')
