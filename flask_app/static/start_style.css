@@ -1,0 +1,12 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.cover {
+    background-size: 100%;
+}
+
+body {
+    overflow: hidden;
+}

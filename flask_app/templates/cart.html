@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='cart_style.css') }}">
+    <title>Tastea</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='/img/nav_logo.jpg') }}" alt=''>
+    </div>
+    <div class="container">
+        <div class="box1">
+            <div class="personal-info">
+                <input type='text' placeholder='Name'><br>
+                <input type='text' placeholder='Phone Number'>
+            </div>
+            <div class="cart-info">
+                <h1>cart info</h1>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="total-price">
+                <h1>price info</h1>
+            </div>
+            <div class="add-cart">
+                <a href = '/categories'>Add more to cart</a>
+            </div>
+            <div class="purchase">
+                <a href = '/purchase'>Purchase</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
